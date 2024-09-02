@@ -59,13 +59,13 @@ int main(int argc, char * argv[]) try
                 }
                 // std::cout<<"color "<<f.get_profile().unique_id()<<std::endl;
                 // just color 
-                
                 double timestamp_ms = f.get_timestamp();
                 cv::Mat cvf(cv::Size(640, 480), CV_8UC3, (void*)f.get_data());
+                cv::Mat cp = cvf.clone();
                 unsigned long long t_ns = (unsigned long long)(timestamp_ms * 1e6);
                 {
                     std::lock_guard<std::mutex> lock(mtx_mat);
-                    m_timestampns_Mat[t_ns] = cvf;
+                    m_timestampns_Mat[t_ns] = cp;
                 }
             }
         }

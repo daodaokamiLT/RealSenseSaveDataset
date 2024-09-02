@@ -1,0 +1,3 @@
+/home/lut/Desktop/Projects/tracker3dof/groundTruthLoader/build/CMakeFiles/rebuild_cache.dir
+/home/lut/Desktop/Projects/tracker3dof/groundTruthLoader/build/CMakeFiles/edit_cache.dir
+/home/lut/Desktop/Projects/tracker3dof/groundTruthLoader/build/CMakeFiles/running_datagrabber.dir
